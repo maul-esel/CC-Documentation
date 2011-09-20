@@ -28,7 +28,8 @@
       Portability
     </p>
     <p>
-      As mentioned above, CC is meant to be portable. It doesn't store any data in the registry nor in your <code>AppData</code> folder (<b>Note:</b> for now it does. This will be removed later).
+      As mentioned above, CC is meant to be portable. However, by default it stores its settings in your <code>AppData</code> folder.<br />
+      You can avoid this by passing <code>--config <b>"&lt;file&gt;"</b></code> to CC, where <b>&lt;file&gt;</b> is the file to usefor settings.
       So you can take CC on your USB-Stick with you, as well as you can "uninstall" it by just deleting its directory.
       <b>Don't forget to backup your resource files before!</b>
     </p>
@@ -63,6 +64,9 @@
     <li><p>
     If you pass the name of a file to CC, it will try to read it as <code>*.ccr</code> file
     and parse the contained resources.<br />
+    </p></li>
+    <li><p>
+    As described above, pass <code>--config "&lt;file&gt;"</code> to CC to use another file for storing settings. 
     </p></li>
     </ul>
 
