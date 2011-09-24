@@ -29,7 +29,7 @@
     </p>
     <p>
       As mentioned above, CC is meant to be portable. However, by default it stores its settings in your <code>AppData</code> folder.<br />
-      You can avoid this by passing <code>--config <b>"&lt;file&gt;"</b></code> to CC, where <b>&lt;file&gt;</b> is the file to usefor settings.
+      You can avoid this by passing <code>--config <b>"&lt;file&gt;"</b></code> to CC, where <b>&lt;file&gt;</b> is the file to use for settings.
       So you can take CC on your USB-Stick with you, as well as you can "uninstall" it by just deleting its directory.
       <b>Don't forget to backup your resource files before!</b>
     </p>
@@ -37,37 +37,25 @@
       CC is neither packaged in the PortableApps format, nor is it likely to become packaged.
       CC is written in C#, so it requires the .NET framework. PortableApps does not accept this.
     </p>
-    <p>
-      To keep portability while offering comfortable features such as registered file extensions,
-      CC supports some command line switches. 
-    </p>
     <br>
 
     <p class="big">
       Command line
     </p>
+    <p>
+      To keep portability while offering comfortable features such as registered file extensions,
+      CC supports some command line switches:
+    </p>
     <ul>
-    <li><p>
-    <code>--install_ext</code> causes CC to install the <code>*.ccr</code> file extension and to register itself as default handler.
-    If run on a machine which has already installed this, CC will instead uninstall it.<br />
-    The app is shutdown without opening the main window.    
-    </p></li>
-    <li><p>
-    <code>--install_COM</code> causes CC to install its COM features to the local machine.
-    Running it a second time uninstalls them.<br />
-    The app is shutdown without opening the main window.
-    </p></li>
-    <li><p>
-    <code>--install_full</code> installs or uninstalls both the COM features and the file extension.<br />
-    The app is shutdown without opening the main window.
-    </p></li>
-    <li><p>
-    If you pass the name of a file to CC, it will try to read it as <code>*.ccr</code> file
-    and parse the contained resources.<br />
-    </p></li>
-    <li><p>
-    As described above, pass <code>--config "&lt;file&gt;"</code> to CC to use another file for storing settings. 
-    </p></li>
+      <li><code>--install_ext</code> installs the <code>*.ccr</code> file extension and to registers CC as default handler.</li>
+      <li><code>--uninstall_ext</code> uninstalls the <code>*.ccr</code> file extension.</li>
+      <li><code>--install_COM</code> will install CC's COM features to the local machine (in a future version).</li>
+      <li><code>--uninstall_COM</code> will uninstall CC's COM features (in a future version).</li>
+      <li><code>--install_full</code> will install both the COM features and the file extension
+        (for now, it's equal to <code>--install_ext</code>).</li>
+      <li>As described above, pass <code>--config "&lt;file&gt;"</code> to CC to use another file for storing settings.</li>
+      <li>If you pass the name of a file to CC, it will try to read it as <code>*.ccr</code> file
+        and parse the contained resources.</li>
     </ul>
 
   </div>
