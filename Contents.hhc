@@ -41,6 +41,16 @@
               <param name="Name" value="Resource syntax">
               <param name="Local" value="topics\resource syntax.htm">
             </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+              <param name="Name" value="Plugins">
+              <param name="Local" value="topics\Plugins.htm">
+            </OBJECT>
+            <UL>
+                <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="Types">
+                  <param name="Local" value="topics\PluginTypes.htm">
+                </OBJECT>
+            </UL>
         </UL>
         <LI><OBJECT type="text/sitemap">
           <param name="Name" value="Extensibility">

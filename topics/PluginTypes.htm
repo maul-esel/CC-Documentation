@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta name="generator" content="HTML Tidy for Windows (vers 25 March 2009), see www.w3.org">
+    <title>
+      PluginTypes
+    </title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+  </head>
+  <body>
+    <div id="topictop">
+      �
+    </div>
+    <div id="topictitleleft">
+      <div id="topictitle">
+        <h3>
+          Plugin types
+        </h3>
+      </div>
+    </div>
+    <div id="main">
+      <img src="../img/logo.png" width="150" style="float:left; margin-right:12px; margin-bottom:24px;" alt="logo">
+      <p>
+        As you might already have read, CC provides a lot of possibilities to extend it. The 5 types allowed for now are:
+      </p>
+      <ul style="margin-left:200">
+        <li>LanguageModule
+        </li>
+        <li>Services
+        </li>
+        <li>custom resource types
+        </li>
+        <li>custom RichContent members
+        </li>
+        <li>templates
+        </li>
+      </ul>
+      <p>But what the hell are "services"?
+      This section gives a quick overview about the features and purpose of these plugins.
+      </p>
+      <br />
+      <p class="big">
+        Language modules
+      </p>
+      <p>
+        Language modules implement coding support for a special coding language.
+        For example, the <a href="https://www.github.com/maul-esel/AHKModule">AHKModule</a>
+        is intended to provide support for the <a href="www.autohotkey.com">AutoHotkey</a> language and its derivates.
+        Language modules can provide <u>syntax highlighting</u>, <u>auto-completion</u>,
+        special tools to <u>generate code</u> (e.g. a visual window designer), <u>compilation</u>, <u>execution</u> and <u>a lot more</u>.
+      </p>
+      <p>
+        It is recommended that you provide separate modules for different "versions" of your language.
+        For example, AHKModule actually encapsulates 4 modules for AutoHotkey classic, AutoHotkey_L, AutoHotkey v2 and IronAHK.
+      </p>
+      <p>
+        Language modules have to implement the
+        <a href="https://www.github.com/maul-esel/ChameleonCoder/blob/master/ChameleonCoder/Plugins/ILanguageModule.cs">ILanguageModule</a> interface.
+      </p>
+      <br />
+      <p class="big">
+        Services
+      </p>
+      <p>
+        Services can be called by the user through <code>Menu > Services</code>.
+        They execute a little task, either predefined or influenced by the user.<br />
+        Some examples:
+        <ul>
+        <li>the <a href="https://www.github.com/maul-esel/GuidCreator">GuidCreator</a> service simply shows a newly created GUID.</li>
+        <li>AHKModule's AutoHotkey.NET service serves as FTP manager.</li>
+        <li>A service could also execute a user-defined build script, post news, manage code via git, SVN, ...</li>
+        </ul>  
+      </p>
+      <p>
+        Services have to implement the
+        <a href="https://www.github.com/maul-esel/ChameleonCoder/blob/master/ChameleonCoder/Plugins/IService.cs">IService</a> interface.
+      </p>
+      <br />
+      <p class="big">
+        Section 3
+      </p>
+      <p>
+        Section paragraph 1
+      </p>
+      <p>
+        etc.
+      </p><br>
+    </div>
+    <div id="foot"></div>
+  </body>
+</html>
